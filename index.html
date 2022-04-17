@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="headerContainer">
+            <h1 class="headerTitle">Invoice Creator</h1>
+            <p class="headerSubtext"> Thanks for choosing BC1337 Inc. </p>
+        </div>
+        <div class="buttonContainer">
+            <button class="button"> <a>Single Page: $150</a> </button>
+            <button class="button"> <a>Multi Page: $500</a>  </button>
+            <button class="button"> <a>Express Service: $1337</a> </button>
+        </div>
+        <section>
+        <p class="task"> TASK </p>
+        <p class="total"> TOTAL</P>
+        </section>
+        <!-- hidden tasks and prices w/ remove button -->
+            <div id="single-page" class="task__body hidden">
+                <div class="task-description" type="submit">Sinlge page application<span                         class="task-remove">Remove</span></div> 
+                <div class="task-amount"><span class="amount-dollar">$</span>150</div>              
+             </div>
+            
+            <div id="multi-page" class="task__body hidden">
+                <div class="task-description" type="submit">Multi page website<span class="task-remove">Remove</span></div>
+                <div class="task-amount"><span class="amount-dollar">$</span>500</div>              
+            </div>
+            <div id="express-service" class="task__body hidden">
+                <div class="task-description" type="submit">Priority Boost<span class="task-remove">Remove</span></div>
+                <div class="task-amount"><span class="amount-dollar">$</span>1337</div>                    
+            </div>
+                        <div class="lineBreak"> </div>
+        <p class="notes"> NOTES </p>
+        <p class="totalAmount"> TOTAL AMOUNT</P>
+        <div class="displayTotal"> $0 </div>
+        <form method="post">
+            <input class="notesInput" type="text" placeholder="Notes & Comments...">
+            <button id="sendInvoice" type="submit" ><img src="emailIcon.png" class="emailIcon"> Send invoice </button>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
+

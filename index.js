@@ -1,3 +1,8 @@
+// adding ability to actually use the home button
+document.getElementById('homeIcon').onclick = function () {
+    location.href = "../projectHub/index.html"
+}
+
 const grabBtns = document.querySelector('.buttonContainer')
 const removeButtonEls = document.querySelectorAll('.task-remove');
 let totalAmountEl = document.querySelector('.displayTotal')
